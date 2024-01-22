@@ -1,18 +1,52 @@
-## Getting Started
+# Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+1. Clone this repository
+```bash
+git clone https://github.com/tadesf/programmieren-1-exam-template.git
+```
 
-## Folder Structure
+2. Unlink the repository from the original one
+```bash
+git remote rm origin
+```
 
-The workspace contains two folders by default, where:
+3. Create a new repository on GitHub (optional)
+```bash
+git remote add origin https://github.com/OWNER/REPOSITORY.git
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+# Verify new remote
+git remote -v
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+git push -u origin master
+```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Now you can start working on your project. Your commits will be pushed to your new repository.
 
-## Dependency Management
+# This template includes
+- Sample Data (in `./data`)
+- Necessary Libraries (in `./lib`)
+- Predefined necessary Classes (in `./src`)
+- Exam Paper (`./PZ1 - Pruefungsaufgabe.pdf`)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```
+.
+├── PZ1 - Pruefungsaufgabe.pdf
+├── README.md
+├── bin
+│   ├── Analysis.class
+│   ├── EntryManager.class
+│   ├── HIVEntry.class
+│   └── PopulationEntry.class
+├── data
+│   ├── GDBx_HIVdata.csv
+│   ├── GDBx_HIVdata_four.csv
+│   ├── UN_popIndicators.csv
+│   └── UN_popIndicators_four.csv
+├── lib
+│   └── B13 Programmierung 1 xchart 3.8.1.jar
+└── src
+    ├── Analysis.java
+    ├── EntryManager.java
+    ├── HIVEntry.java
+    └── PopulationEntry.java
+```
