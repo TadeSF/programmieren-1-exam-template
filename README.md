@@ -1,24 +1,38 @@
 # Getting Started
 
 1. Clone this repository
-```bash
-git clone https://github.com/tadesf/programmieren-1-exam-template.git
-```
+    ```bash
+    git clone https://github.com/tadesf/programmieren-1-exam-template.git
+    ```
 
 2. Unlink the repository from the original one
-```bash
-git remote rm origin
-```
+    ```bash
+    git remote rm origin
+    ```
 
 3. Create a new repository on GitHub (optional)
-```bash
-git remote add origin https://github.com/OWNER/REPOSITORY.git
+    - With GitHub Website
+        Make sure to leave the checkbox for initializing the repository with a README and .gitignore unchecked.
+    - With Github CLI (Command Line Interface)
+        ```bash
+        # If you use github cli for the first time, you have to login first
+        gh auth login
 
-# Verify new remote
-git remote -v
+        # Create a new repository
+        gh repo create programmieren-1-exam
+        ```
 
-git push -u origin master
-```
+4. Link the local repository to the remote one on GitHub (optional)
+    ```bash
+    # Dont forget to replace OWNER with your GitHub username
+    git remote add origin https://github.com/OWNER/programmieren-1-exam.git
+
+    # Verify new remote
+    git remote -v
+
+    # Push changes to new remote
+    git push -u origin main
+    ```
 
 Now you can start working on your project. Your commits will be pushed to your new repository.
 
@@ -27,7 +41,7 @@ Now you can start working on your project. Your commits will be pushed to your n
 - Necessary Libraries (in `./lib`)
 - Predefined necessary Classes (in `./src`)
 - Exam Paper (`./PZ1 - Pruefungsaufgabe.pdf`)
-- (VSCode Settings, if you want to use VSCode as your IDE (`./.vscode`))
+- VSCode Settings, if you want to use VSCode as your IDE (`./.vscode`)
 
 ```
 .
