@@ -27,16 +27,12 @@ Now you can start working on your project. Your commits will be pushed to your n
 - Necessary Libraries (in `./lib`)
 - Predefined necessary Classes (in `./src`)
 - Exam Paper (`./PZ1 - Pruefungsaufgabe.pdf`)
+- (VSCode Settings, if you want to use VSCode as your IDE (`./.vscode`))
 
 ```
 .
 ├── PZ1 - Pruefungsaufgabe.pdf
 ├── README.md
-├── bin
-│   ├── Analysis.class
-│   ├── EntryManager.class
-│   ├── HIVEntry.class
-│   └── PopulationEntry.class
 ├── data
 │   ├── GDBx_HIVdata.csv
 │   ├── GDBx_HIVdata_four.csv
