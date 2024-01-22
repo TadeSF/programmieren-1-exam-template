@@ -18,8 +18,8 @@
         # If you use github cli for the first time, you have to login first
         gh auth login
 
-        # Create a new repository
-        gh repo create programmieren-1-exam
+        # Create a new repository – Dont forget to replace OWNER with your GitHub username
+        gh repo create OWNER/programmieren-1-exam --private --source=. --remote=origin
         ```
 
 4. Link the local repository to the remote one on GitHub (optional)
